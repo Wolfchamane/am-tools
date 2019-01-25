@@ -1,6 +1,6 @@
 {
     "name": "am-tools",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Provides development tools",
     "keywords": [
         "nodejs",
@@ -21,5 +21,8 @@
         "istanbul": "^0.4.5",
         "jest": "^23.6.0",
         "regenerator-runtime": "^0.13.1"
+    },
+    "scripts": {
+        "test": "NODE_ENV=testing node ./scripts/test.js --no-cache"
     }
 }
