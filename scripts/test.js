@@ -1,4 +1,4 @@
-const config   = require('../src/jest/config');
+const config   = require('./test/config');
 const argv     = process.argv.slice(2);
 if (!argv.includes('--coverage'))
 {
