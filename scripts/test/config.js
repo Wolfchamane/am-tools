@@ -24,7 +24,7 @@ module.exports = {
     rootDir             : cwd,
     roots               : ['<rootDir>/src', '<rootDir>/tests'],
     transform           : {
-        '\\.m?js$' : `${root}/jest/babel.js`
+        '\\.m?js$' : `${root}/test/babel.js`
     },
-    transformIgnorePatterns : ['/node_modules/']
+    transformIgnorePatterns : ['node_modules/(?!(?:am-))']
 };
