@@ -21,41 +21,9 @@ module.exports = {
     module : {
         rules : [
             require('./loaders/vue'),
-            {
-                test : /\.m?js$/,
-                loader : 'babel-loader',
-                exclude : /node_modules/,
-                type : 'javascript-auto',
-                options : {
-                    babelrc : false,
-                    presets: [
-                        [
-                            '@babel/preset-env',
-                            {
-                                modules: false
-                            }
-                        ]
-                    ],
-                    plugins: [
-                        '@babel/plugin-proposal-class-properties',
-                        '@babel/plugin-transform-modules-commonjs',
-                        '@babel/plugin-transform-runtime'
-                    ]
-                }
-            },
-            {
-                test : /\.pug$/,
-                loader : 'pug-plain-loader'
-            },
-            {
-                test : /\.(sa|sc|c)ss$/,
-                use : [
-                    'style-loader',
-                    'css-loader',
-                    'postcss-loader',
-                    'sass-loader'
-                ]
-            }
+            require('./loaders/babel'),
+            require('./loaders/pug'),
+            require('./loaders/sass')
         ]
     },
     plugins: [
