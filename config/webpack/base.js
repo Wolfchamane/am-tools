@@ -20,10 +20,7 @@ module.exports = {
     },
     module : {
         rules : [
-            {
-                test : /\.vue$/,
-                loader : 'vue-loader'
-            },
+            require('./loaders/vue'),
             {
                 test : /\.m?js$/,
                 loader : 'babel-loader',
