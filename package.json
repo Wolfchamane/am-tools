@@ -9,6 +9,10 @@
     ],
     "author": "Arturo Martínez <arturo.martinez@wolfchamane.com>",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Wolfchamane/am-tools.git"
+    },
     "dependencies": {
         "@babel/core": "^7.2.2",
         "@babel/plugin-proposal-class-properties": "^7.3.0",
@@ -27,10 +31,12 @@
         "postcss-loader": "^3.0.0",
         "pug": "^2.0.3",
         "pug-plain-loader": "^1.0.0",
+        "sass-lint": "^1.12.1",
+        "sass-lint-webpack": "^1.0.0",
         "sass-loader": "^7.1.0",
-        "style-loader": "^0.23.1",
         "vue": "^2.6.6",
         "vue-loader": "^15.6.2",
+        "vue-style-loader": "^4.1.2",
         "vue-template-compiler": "^2.6.6",
         "webpack": "^4.29.3",
         "webpack-cli": "^3.2.3",

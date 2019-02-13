@@ -1,8 +1,8 @@
 module.exports = {
-    test    : /\.(sa|sc|c)ss$/,
+    test    : /\.sass$/,
     exclude : /node_modules/,
     use     : [
-        'style-loader',
+        'vue-style-loader',
         {
             loader  : 'css-loader',
             options : {

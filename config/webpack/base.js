@@ -1,5 +1,6 @@
 const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const SassLintPlugin = require('sass-lint-webpack');
 
 module.exports = {
     mode    : 'development',
@@ -28,7 +29,8 @@ module.exports = {
         ]
     },
     plugins: [
-        new VueLoaderPlugin()
+        new VueLoaderPlugin(),
+        new SassLintPlugin()
     ],
     node : {
         setImmediate    : false,
