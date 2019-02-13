@@ -12,9 +12,10 @@ module.exports = {
         publicPath : '/'
     },
     resolve : {
-        symlinks : true,
+        symlinks : false,
         extensions : ['.js', '.vue', '.mjs'],
         alias : {
+            vue$: 'vue/dist/vue.js',
             '@' : path.resolve('src')
         }
     },
@@ -28,5 +29,13 @@ module.exports = {
     },
     plugins: [
         new VueLoaderPlugin()
-    ]
+    ],
+    node : {
+        setImmediate    : false,
+        dgram           : 'empty',
+        fs              : 'empty',
+        net             : 'empty',
+        tls             : 'empty',
+        child_process   : 'empty'
+    }
 };

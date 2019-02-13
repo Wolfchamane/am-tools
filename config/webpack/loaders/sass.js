@@ -1,9 +1,21 @@
 module.exports = {
-    test : /\.(sa|sc|c)ss$/,
-    use : [
+    test    : /\.(sa|sc|c)ss$/,
+    exclude : /node_modules/,
+    use     : [
         'style-loader',
-        'css-loader',
+        {
+            loader  : 'css-loader',
+            options : {
+                sourceMap : true
+            }
+        },
         'postcss-loader',
-        'sass-loader'
+        {
+            loader  : 'sass-loader',
+            options : {
+                sourceMap       : true,
+                indentedSyntax  : true
+            }
+        }
     ]
 };

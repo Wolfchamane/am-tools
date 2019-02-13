@@ -20,6 +20,7 @@
         "css-loader": "^2.1.0",
         "eslint": "^5.13.0",
         "eslint-loader": "^2.1.2",
+        "html-webpack-plugin": "^3.2.0",
         "istanbul": "^0.4.5",
         "jest": "^24.1.0",
         "node-sass": "^4.11.0",
@@ -32,7 +33,8 @@
         "vue-loader": "^15.6.2",
         "vue-template-compiler": "^2.6.6",
         "webpack": "^4.29.3",
-        "webpack-cli": "^3.2.3"
+        "webpack-cli": "^3.2.3",
+        "webpack-dev-server": "^3.1.14"
     },
     "scripts": {
         "test": "NODE_ENV=testing node ./scripts/test.js --no-cache"
