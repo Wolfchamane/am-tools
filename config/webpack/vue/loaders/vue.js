@@ -1,9 +1,9 @@
-module.exports = {
+module.exports = isPro => ({
     test : /\.vue$/,
     loader : 'vue-loader',
     options : {
-        cssSourceMap       : true,
-        cacheBusting       : true,
+        cssSourceMap       : !isPro,
+        cacheBusting       : !isPro,
         transformToRequire : {
             image  : 'xlink:href',
             img    : 'src',
@@ -11,4 +11,4 @@ module.exports = {
             video  : ['src', 'poster']
         }
     }
-};
+});
